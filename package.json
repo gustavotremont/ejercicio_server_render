@@ -1,0 +1,25 @@
+{
+  "name": "ejercicio_server_render",
+  "version": "1.0.0",
+  "description": "Base MERN project template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavotremont/ejercicio_server_render.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavotremont/ejercicio_server_render/issues"
+  },
+  "homepage": "https://github.com/gustavotremont/ejercicio_server_render#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6",
+    "pug": "^3.0.2"
+  }
+}

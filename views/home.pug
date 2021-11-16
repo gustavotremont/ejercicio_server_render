@@ -1,0 +1,13 @@
+//ADD VIEWS AND CHANGE NAME
+doctype html
+html
+   head
+      title hello Pug
+      link(rel="stylesheet", href="styles/style.css")
+   body
+      main  
+         h1 BUSCADOR DE PELICULAS
+         form#filmSearch(action="/film", method="post") 
+            label(for="film") Ingresa el nombre de una pelicula
+            input#film(type="text", name="film")
+            button(type="submit") Buscar Peli 
