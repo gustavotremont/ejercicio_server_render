@@ -9,21 +9,22 @@ const getFilm = async (req, res) => {
         } else {
             res.render('error')
         }
-    }else if(req.body.film) {
-        const data = await dataFilm.getFilmByName(req.body.film)
-
-        if(data.Response == 'True'){
-            res.render('film', {film: data})
-        } else {
-            res.render('error')
-        }
     }else {
         res.render('error')
     }
 };
 
+const getFilmByName = async (req, res) => {
+    if(req.body.film) {
+        res.redirect(`/film/${req.body.film}`)
+    }else {
+        res.render('error')
+    }
+}
+
 const film = {
-    getFilm
+    getFilm,
+    getFilmByName
 };
 
 module.exports = film;

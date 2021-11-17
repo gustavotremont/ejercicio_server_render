@@ -3,8 +3,7 @@ const fetch = require('node-fetch');
 const API_KEY = '9fd5cced';
 
 const getFilmByName = async (name) => {
-    const formatName = name.replace(' ','+');
-    const data = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&t=${formatName}`);
+    const data = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&t=${name}`);
     const product = await data.json();
     return product;
 };

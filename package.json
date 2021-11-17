@@ -19,6 +19,7 @@
   "homepage": "https://github.com/gustavotremont/ejercicio_server_render#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "node-fetch": "^2.6.6",
     "pug": "^3.0.2"
   }
